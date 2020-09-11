@@ -1,0 +1,30 @@
+name: Build and Publish
+on:
+  push:
+    branches:
+      - master
+      - main
+
+env:
+  GIT: 'true'
+  GITURL: 'https://github.com/Sirherobrine23/APT_bysh23'
+  GITBRANCH: master
+  GITUSER: Sirherobrine23
+  GITPASS: ${{ secrets.PASS }}
+  GITDIR: 'package/main'
+  
+jobs:
+  Debian-Package:
+    runs-on: ubuntu-18.04
+    container: sirherobrine23/public-debian-packages-copiler:latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.2
+
+      - name: DPKG Build and Publish
+        run: |
+          rm -rf *.git*
+          rm -rf LICE*
+          rm -rf README*
+          init_23
