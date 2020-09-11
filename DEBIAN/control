@@ -3,11 +3,9 @@ Section: misc
 Priority: optional
 Homepage: https://www.minecraft.net/en-us/download/server/bedrock
 Standards-Version: 3.9.2
-
 Package: bds-common
 Version: 1.16.40.02
 Maintainer: Matheus S Queiroga <srherobrine20@gmail.com>
-Replaces: bds-common
 Architecture: amd64
 Description: Small package with Minecraft Bedrock Server software
  Is not Open Sorce Software
