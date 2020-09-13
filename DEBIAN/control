@@ -1,6 +1,5 @@
 Source: https://github.com/Sirherobrine23/BDS-Common
-Section: misc
-Priority: optional
+Section: bysh23
 Homepage: https://www.minecraft.net/en-us/download/server/bedrock
 Standards-Version: 3.9.2
 Package: bds-common
