@@ -1,0 +1,5 @@
+#!/bin/bash
+echo 'Minecraft Bedrock Server Starting'
+cd /opt/BDS-Common/
+export LD_LIBRARY_PATH=/opt/BDS-Common
+qemu-x86_64-static ./bedrock_server

@@ -1,3 +1,0 @@
-#!/bin/bash
-echo 'Minecraft Bedrock Server Starting'
-LD_LIBRARY_PATH="/opt/BDS-Common" /opt/BDS-Common/bedrock_server

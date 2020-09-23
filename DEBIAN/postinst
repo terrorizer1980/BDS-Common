@@ -1,0 +1,9 @@
+#!/bin/bash
+
+USER(){
+adduser bds-user
+usermod -aG root bds-user
+
+chown /etc/bds bds-user:bds-user
+}
+echo 'No futuro, ainda em criação e manuteção'
