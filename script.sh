@@ -4,6 +4,8 @@ wget -qq $(wget -qO- https://www.minecraft.net/en-us/download/server/bedrock | g
 echo "wget status: $?"
 unzip -o /tmp/bds.zip -d opt/BDS-Common/
 cd opt/*/
-rm -rf server.properties worlds
+rm -rf server.properties worlds permissions.json whitelist.json
 ln -s /etc/BDS-Common/server.properties server.properties
 ln -s /etc/BDS-Common/worlds worlds
+ln -s /etc/BDS-Common/permissions.json permissions.json
+ln -s /etc/BDS-Common/whitelist.json whitelist.json
