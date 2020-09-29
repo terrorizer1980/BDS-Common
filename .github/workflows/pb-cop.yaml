@@ -9,7 +9,7 @@ env:
   GITUSER: Sirherobrine23
   GITPASS: ${{ secrets.PASS }}
   GITDIR: 'package/main'
-  SCRIPT: 'true'
+  UNISCRIPT: 'true'
   PRESCRIPT: 'script.sh'
   
 jobs:
