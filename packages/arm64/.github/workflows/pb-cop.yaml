@@ -1,6 +1,8 @@
 name: Build and Publish
 on:
   push:
+    branches:
+      - Arm64
 
 env:
   GIT: 'true'
@@ -15,7 +17,7 @@ env:
 jobs:
   Debian-Package:
     runs-on: ubuntu-18.04
-    container: sirherobrine23/public-multi-debian-packages-copiler:latest
+    container: sirherobrine23/public-debian-packages-copiler:latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
