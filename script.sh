@@ -5,7 +5,7 @@ echo "wget status: $?"
 unzip -oqq /tmp/bds.zip -d opt/BDS-Common/
 VERSS="$(lynx -listonly -nonumbers -dump https://www.minecraft.net/en-us/download/server/bedrock | grep bin-linux | sed 's|https://minecraft.azureedge.net/bin-linux/bedrock-server-||g' | sed 's|.zip||g')"
 OLDVER="$(cat */control | grep 'Version:')"
-sed -i "s|$OLDVER|Version: $VERSS|g"
+sed -i "s|$OLDVER|Version: $VERSS|g" */control
 cd opt/*/
 rm -rf server.properties worlds permissions.json whitelist.json placehold
 ln -s /etc/BDS-Common/server.properties server.properties
