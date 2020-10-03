@@ -5,4 +5,4 @@ echo "$PIDS do BDS-common"
 echo 'Minecraft Bedrock Server Starting'
 cd /opt/BDS-Common/
 export LD_LIBRARY_PATH=/lib64
-qemu-x86_64-static ./bedrock_server
+qemu-x86_64-static ./bedrock_server | grep -v 'Running AutoCompaction...'
