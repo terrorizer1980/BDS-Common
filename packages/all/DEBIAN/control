@@ -1,11 +1,11 @@
 Package: bds-common
 Source: https://github.com/Sirherobrine23/BDS-Common
 Section: bysh23
-Depends: qemu-user-static
+Depends: qemu-user-static, libcurl3
 Homepage: https://www.minecraft.net/en-us/download/server/bedrock
 Version: 1.16.40.02
 Maintainer: Matheus S Queiroga <srherobrine20@gmail.com>
-Architecture: arm64
+Architecture: all
 Description: Small package with Minecraft Bedrock Server software
  Is not Open Sorce Software, Mojang AB
 
