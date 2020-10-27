@@ -4,7 +4,7 @@ if [ -e /usr/lib/libcurl.so.4 ];then
     echo "Não precissa criar um link simbolico para o libcurl.so.4"
 else
     echo 'Criando um link Simbolico para o libcurl.so.4'
-    ln -s /usr/lib/x86_64-linux-gnu/libcurl.so.4 /usr/lib/libcurl.so.4
+    ln -s /usr/lib/*-linux-gnu/libcurl.so.4 /usr/lib/libcurl.so.4
 fi
 
 if [ -e /lib64/ld-linux-x86-64.so.2 ];then
