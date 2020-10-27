@@ -2,11 +2,11 @@
 echo 'Minecraft Bedrock Server Starting'
 cd /opt/BDS-Common/
 echo "reuning in `arch`"
-esac `arch` in
+case `arch` in
 x86_64)
     export LD_LIBRARY_PATH=/opt/BDS-Common
     ./bedrock_server ;;
 *)
     export LD_LIBRARY_PATH=/lib64
     qemu-x86_64-static ./bedrock_server
-case
+esac
