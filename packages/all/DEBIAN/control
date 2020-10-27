@@ -1,7 +1,6 @@
 Package: bds-common
-Source: https://github.com/Sirherobrine23/BDS-Common
 Section: bysh23
-Depends: qemu-user-static, libcurl3
+Depends: qemu-user-static, libcurl4
 Homepage: https://www.minecraft.net/en-us/download/server/bedrock
 Version: 1.16.40.02
 Maintainer: Matheus S Queiroga <srherobrine20@gmail.com>
