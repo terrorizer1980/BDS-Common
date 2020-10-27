@@ -1,12 +1,13 @@
 #!/bin/bash
 echo 'Minecraft Bedrock Server Starting'
 cd /opt/BDS-Common/
-echo "reuning in `arch`"
+echo "running on `arch`"
 case `arch` in
 x86_64)
     export LD_LIBRARY_PATH=/opt/BDS-Common
     ./bedrock_server ;;
 *)
+    echo "running on a non-X86_64 platform,! this can be very slow!"
     export LD_LIBRARY_PATH=/lib64
     qemu-x86_64-static ./bedrock_server
 esac
