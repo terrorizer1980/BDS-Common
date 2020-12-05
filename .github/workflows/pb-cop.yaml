@@ -2,7 +2,7 @@ name: Build and Publish
 on:
   push:
   schedule:
-    - cron: 0 0 1/7 * *
+    - cron: * * 1/1 * *
 
 env:
   GIT: 'true'
