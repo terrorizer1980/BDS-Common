@@ -1,8 +1,8 @@
 name: Build and Publish
 on:
   push:
-  schedule:
-    - cron: * * 1/1 * *
+   schedule:
+     - cron: * * 1/1 * *
 
 env:
   GIT: 'true'
