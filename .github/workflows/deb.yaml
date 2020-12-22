@@ -1,0 +1,24 @@
+name: BDS-Common packages for Debian systems
+on:
+  push:
+  schedule:
+    - cron: 0 18 * * *
+  
+jobs:
+  Teste:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        repository: "Bds-Maneger/BDS-Common"
+        ref: "Unico-build"
+
+    - name: Create Package
+      uses: Sirherobrine23/Action-Debian_Package@main
+      with:
+        SCRIPT: "script.sh"
+        
+    - name: List
+      run: echo ${{ env.DEB_PATH }}

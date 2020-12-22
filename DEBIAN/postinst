@@ -1,16 +1,16 @@
 #!/bin/bash
 echo '---------------'
 if [ -e /usr/lib/libcurl.so.4 ];then
-    echo "Não precissa criar um link simbolico para o libcurl.so.4"
+    echo "You do not need to create a symbolic link to the libcurl.so.4"
 else
-    echo 'Criando um link Simbolico para o libcurl.so.4'
+    echo 'Creating a Symbolic link to the libcurl.so.4'
     ln -s /usr/lib/*-linux-gnu/libcurl.so.4 /usr/lib/libcurl.so.4
 fi
 
 if [ -e /lib64/ld-linux-x86-64.so.2 ];then
-    echo "Não precissa criar um link simbolico para o ld-linux-x86-64.so.2"
+    echo "You do not need to create a symbolic link to the ld-linux-x86-64.so.2"
 else
-    echo 'Criando um link Simbolico para o ld-linux-x86-64.so.2'
+    echo 'Creating a Symbolic link to the ld-linux-x86-64.so.2'
     ln -s /lib64/ld-2.28.so /lib64/ld-linux-x86-64.so.2
 fi
 echo '---------------'

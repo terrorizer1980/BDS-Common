@@ -1,13 +1,13 @@
-# Portugues
+# small description
 
-Um pequeno pacote Debian para instalação e configuração manual ou automatica, Pacote para distros baseadas em Debian 
+A small Debian package for manual or automatic installation and configuration, Package for Debian-based distros
 
-# Notas Para processador Arm64 e I386
+# Notes For Arm64 and I386 processor
 
-- Como se trata de uma cpu emulada, nesse pacote temos que ter paciencia em esperar o software `conseguir` iniciar o mapa, e teremos varios time outs por conta disso
-- Recomendo só para testes não para uso diario (Já comrompi varios mapas por conta disso)
+- As it is an emulated cpu, in this package we have to be patient in waiting for the software to `get` to start the map, and we will have several time outs because of that
+- I recommend it only for tests not for daily use (I already got several maps because of that)
 
-# Testado a onde?
+# Tested where!
 
 - Linux Deploy (Motorola Moto G7 Plus - Root)
 - RespBerry pi 3B+
